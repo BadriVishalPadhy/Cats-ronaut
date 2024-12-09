@@ -1,11 +1,6 @@
-const gql  = require("graphql_tag")
-const { Module } = require("module")
+const gql  = require("graphql-tag")
 
 const typeDefs  =  gql`
- " We define Query type because we dont have end points like in rest api "
- "Query type are Entry points to the rest of the Schema "
- "Query to get Tracks array for the homepage grid "
-  "Fetching the track list for the homepage"
 
 
 
@@ -35,4 +30,4 @@ type Track {
 
 
 `
-Module.exports = typeDefs;
+module.exports = typeDefs;
