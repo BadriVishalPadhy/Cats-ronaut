@@ -1,4 +1,5 @@
 const gql  = require("graphql_tag")
+const { Module } = require("module")
 
 const typeDefs  =  gql`
  " We define Query type because we dont have end points like in rest api "
@@ -34,3 +35,4 @@ type Track {
 
 
 `
+Module.exports = typeDefs;
